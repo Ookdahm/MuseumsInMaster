@@ -91,7 +91,9 @@ public class NavigationDrawerFragment extends Fragment {
             Bundle savedInstanceState) {
 
 
+        View view = inflater.inflate(R.layout.fragment_nav_drawer_layout, container, false);
 
+        /*
         mDrawerListView = (ListView) inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -116,7 +118,9 @@ public class NavigationDrawerFragment extends Fragment {
                 }));
 
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
-        return mDrawerListView;
+
+        */
+        return view;
     }
 
     public boolean isDrawerOpen() {
@@ -245,15 +249,19 @@ public class NavigationDrawerFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         // If the drawer is open, show the global app actions in the action bar. See also
         // showGlobalContextActionBar, which controls the top-left area of the action bar.
+
         if (mDrawerLayout != null && isDrawerOpen()) {
             inflater.inflate(R.menu.global, menu);
             showGlobalContextActionBar();
         }
+
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
