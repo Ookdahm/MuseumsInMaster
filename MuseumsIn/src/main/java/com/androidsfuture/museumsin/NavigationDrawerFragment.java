@@ -1,5 +1,6 @@
 package com.androidsfuture.museumsin;
 
+import android.support.v4.app.ListFragment;
 import android.support.v7.app.ActionBarActivity;;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
@@ -19,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.support.v4.app.Fragment;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -52,7 +54,9 @@ public class NavigationDrawerFragment extends Fragment {
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerListView;
+    private ListView listNavMaps;
     private View mFragmentContainerView;
+    private String[] mapList;
 
     private int mCurrentSelectedPosition = 0;
     private boolean mFromSavedInstanceState;
@@ -84,6 +88,8 @@ public class NavigationDrawerFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         // Indicate that this fragment would like to influence the set of actions in the action bar.
         setHasOptionsMenu(true);
+
+
     }
 
     @Override
@@ -204,9 +210,9 @@ public class NavigationDrawerFragment extends Fragment {
     private void selectItem(int position) {
 
         mCurrentSelectedPosition = position;
-        if (mDrawerListView != null) {
-            mDrawerListView.setItemChecked(position, true);
-        }
+        //if (mDrawerListView != null) {
+          //  mDrawerListView.setItemChecked(position, true);
+        //}
         if (mDrawerLayout != null) {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }

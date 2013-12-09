@@ -34,5 +34,14 @@
     <string name="title_tell_friend">Tell A Friend</string>
     <string name="title_contact">Contact Us</string>
 
+    <string-array name="item_nav_maps">
+        <item>All</item>
+        <item>Art</item>
+        <item>Free</item>
+        <item>History</item>
+        <item>Houses</item>
+        <item>Science</item>
+    </string-array>
+
 
 </resources>
