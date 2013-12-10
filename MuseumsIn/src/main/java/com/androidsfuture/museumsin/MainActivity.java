@@ -33,8 +33,10 @@ public class MainActivity extends ActionBarActivity
     private CharSequence mTitle;
     private ListView listMapItems;
     private ListView listDaysItems;
+    private ListView listOptionsItems;
     private String[] itemsMap;
     private String[] itemsDays;
+    private String[] itemsOptions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +53,19 @@ public class MainActivity extends ActionBarActivity
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
         listMapItems = (ListView)findViewById(R.id.listViewMaps);
-        itemsMap = getResources().getStringArray(R.array.item_nav_maps);
-
         listDaysItems = (ListView)findViewById(R.id.listViewDays);
+        listOptionsItems = (ListView)findViewById(R.id.listViewOptions);
+
+        itemsMap = getResources().getStringArray(R.array.item_nav_maps);
         itemsDays= getResources().getStringArray(R.array.item_days);
+        itemsOptions = getResources().getStringArray(R.array.item_options);
 
         listMapItems.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.item_nav, itemsMap));
         listDaysItems.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.item_nav, itemsDays));
+        listOptionsItems.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.item_nav, itemsOptions));
 
     }
 

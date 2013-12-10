@@ -16,7 +16,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/title_show_on_map"
             android:id="@+id/textView"
-            android:textColor="@color/ics_swatch_orange05"
+            android:textColor="@color/ics_swatch_orange07"
             android:background="@color/opaqueLight"
             android:paddingLeft="10dp"/>
 
@@ -34,14 +34,32 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/title_open_on"
             android:id="@+id/textView2"
-            android:textColor="@color/ics_swatch_orange05"
+            android:textColor="@color/ics_swatch_orange07"
             android:background="@color/opaqueLight"
             android:paddingLeft="10dp"/>
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="185dp"
             android:id="@+id/listViewDays"
+            android:choiceMode="singleChoice"
+            android:divider="@color/opaqueLight"
+            android:dividerHeight="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="More Options"
+            android:id="@+id/textView3"
+            android:textColor="@color/ics_swatch_orange07"
+            android:background="@color/opaqueLight"
+            android:paddingLeft="10dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:id="@+id/listViewOptions"
             android:choiceMode="singleChoice"
             android:divider="@color/opaqueLight"
             android:dividerHeight="1dp"/>

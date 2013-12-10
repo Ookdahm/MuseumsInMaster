@@ -55,5 +55,12 @@
         <item>Saturday</item>
     </string-array>
 
+    <string-array name="item_options">
+        <item>City Pass</item>
+        <item>Internships</item>
+        <item>More Apps</item>
+        <item>Tell A Friend</item>
+    </string-array>
+
 
 </resources>
