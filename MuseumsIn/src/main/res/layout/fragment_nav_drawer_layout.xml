@@ -8,7 +8,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="match_parent">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,41 +20,32 @@
             android:background="@color/opaqueLight"
             android:paddingLeft="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/btn_name_all"
-            android:id="@+id/textView3"
-            android:textColor="@color/ics_swatch_orange03"
-            android:paddingLeft="30dp"
-            android:paddingBottom="3dp"/>
-
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/listViewMaps" />
+       <ListView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/listViewMaps"
+            android:choiceMode="singleChoice"
+            android:divider="@color/opaqueLight"
+            android:dividerHeight="1dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/title_open_on"
-            android:id="@+id/textView8"
+            android:id="@+id/textView2"
             android:textColor="@color/ics_swatch_orange05"
             android:background="@color/opaqueLight"
-            android:paddingLeft="10dp"
-           />
+            android:paddingLeft="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/title_sunday"
-            android:id="@+id/textView2"
-            android:textColor="@color/ics_swatch_orange03"
-            android:paddingLeft="30dp"
-            android:paddingBottom="3dp"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/listViewDays"
+            android:choiceMode="singleChoice"
+            android:divider="@color/opaqueLight"
+            android:dividerHeight="1dp"/>
+
 
     </LinearLayout>
 </ScrollView>

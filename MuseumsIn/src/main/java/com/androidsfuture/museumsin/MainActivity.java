@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity
@@ -30,6 +31,10 @@ public class MainActivity extends ActionBarActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+    private ListView listMapItems;
+    private ListView listDaysItems;
+    private String[] itemsMap;
+    private String[] itemsDays;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,18 @@ public class MainActivity extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        listMapItems = (ListView)findViewById(R.id.listViewMaps);
+        itemsMap = getResources().getStringArray(R.array.item_nav_maps);
+
+        listDaysItems = (ListView)findViewById(R.id.listViewDays);
+        itemsDays= getResources().getStringArray(R.array.item_days);
+
+        listMapItems.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.item_nav, itemsMap));
+        listDaysItems.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.item_nav, itemsDays));
+
     }
 
     @Override

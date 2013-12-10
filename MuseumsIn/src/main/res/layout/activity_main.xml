@@ -16,6 +16,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/museum_nav_drawer_background">
 
+
+
     </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
@@ -25,10 +27,13 @@
          android:layout_gravity="left" instead. -->
     <!-- The drawer is given a fixed width in dp and extends the full height of
          the container. -->
+
+
     <fragment android:id="@+id/navigation_drawer"
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:name="com.androidsfuture.museumsin.NavigationDrawerFragment" />
+        android:name="com.androidsfuture.museumsin.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_nav_drawer_layout" />
 
 </android.support.v4.widget.DrawerLayout>
