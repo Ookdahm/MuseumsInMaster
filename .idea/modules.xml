@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../AndroidStudioProjects.iml" filepath="$PROJECT_DIR$/../AndroidStudioProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/MuseumsIn.iml" filepath="$PROJECT_DIR$/MuseumsIn.iml" />
       <module fileurl="file://$PROJECT_DIR$/MuseumsIn/MuseumsIn-MuseumsIn.iml" filepath="$PROJECT_DIR$/MuseumsIn/MuseumsIn-MuseumsIn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MuseumsInMaster.iml" filepath="$PROJECT_DIR$/MuseumsInMaster.iml" />
       <module fileurl="file://$PROJECT_DIR$/MuseumsInMaster.iml" filepath="$PROJECT_DIR$/MuseumsInMaster.iml" />
     </modules>
   </component>
