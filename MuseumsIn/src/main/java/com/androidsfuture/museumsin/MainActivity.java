@@ -13,11 +13,14 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import java.lang.reflect.Field;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -43,6 +46,7 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Construct Navigation Drawer
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
@@ -52,20 +56,35 @@ public class MainActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
+        // Construct ListViews to be used in NavigationDrawer
         listMapItems = (ListView)findViewById(R.id.listViewMaps);
         listDaysItems = (ListView)findViewById(R.id.listViewDays);
         listOptionsItems = (ListView)findViewById(R.id.listViewOptions);
 
+        // Get string array resources used in Navigation Drawer
         itemsMap = getResources().getStringArray(R.array.item_nav_maps);
         itemsDays= getResources().getStringArray(R.array.item_days);
         itemsOptions = getResources().getStringArray(R.array.item_options);
 
+        // Attach ArrayAdapters to ListViews used in Navigation Drawer
         listMapItems.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.item_nav, itemsMap));
         listDaysItems.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.item_nav, itemsDays));
         listOptionsItems.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.item_nav, itemsOptions));
+
+        // Force overflow icon to display in ActionBar. Thanks to Timo Ohr
+        try {
+            ViewConfiguration config = ViewConfiguration.get(this);
+            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+            if(menuKeyField != null) {
+                menuKeyField.setAccessible(true);
+                menuKeyField.setBoolean(config, false);
+            }
+        } catch (Exception ex) {
+            // Ignore
+        }
 
     }
 

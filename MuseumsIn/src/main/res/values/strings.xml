@@ -35,6 +35,8 @@
     <string name="action_contact">Contact Us</string>
     <string name="action_maps">Show In Map</string>
     <string name="action_open">Open On</string>
+    <string name="action_share">Share</string>
+
 
     <string-array name="item_nav_maps">
         <item>All</item>
@@ -59,7 +61,7 @@
         <item>City Pass</item>
         <item>Internships</item>
         <item>More Apps</item>
-        <item>Tell A Friend</item>
+        <!-- <item>Tell A Friend</item> -->
     </string-array>
 
 
