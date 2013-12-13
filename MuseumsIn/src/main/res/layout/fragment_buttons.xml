@@ -12,26 +12,32 @@
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/btn_name_all"
             android:id="@+id/btnAll"
-            android:textColor="@color/ics_swatch_orange03" />
+            android:textColor="@color/ics_swatch_orange03"
+            android:background="@drawable/button_state"
+            android:layout_margin="2dp"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/btn_name_art"
             android:id="@+id/btnArt"
-            android:textColor="@color/ics_swatch_orange03"/>
+            android:textColor="@color/ics_swatch_orange03"
+            android:background="@drawable/button_state"
+            android:layout_margin="2dp"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/btn_name_free"
             android:id="@+id/btnFree"
-            android:textColor="@color/ics_swatch_orange03"/>
+            android:textColor="@color/ics_swatch_orange03"
+            android:background="@drawable/button_state"
+            android:layout_margin="2dp"/>
     </TableRow>
 
     <TableRow
@@ -41,25 +47,31 @@
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/btn_name_history"
             android:id="@+id/btnHistory"
-            android:textColor="@color/ics_swatch_orange03"/>
+            android:textColor="@color/ics_swatch_orange03"
+            android:background="@drawable/button_state"
+            android:layout_margin="2dp"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/btn_name_houses"
             android:id="@+id/btnHouses"
-            android:textColor="@color/ics_swatch_orange03"/>
+            android:textColor="@color/ics_swatch_orange03"
+            android:background="@drawable/button_state"
+            android:layout_margin="2dp"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/btn_name_science"
             android:id="@+id/btnScience"
-            android:textColor="@color/ics_swatch_orange03"/>
+            android:textColor="@color/ics_swatch_orange03"
+            android:background="@drawable/button_state"
+            android:layout_margin="2dp"/>
     </TableRow>
 </TableLayout>
