@@ -10,7 +10,7 @@
         android:layout_height="fill_parent">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/btn_name_all"
@@ -20,7 +20,7 @@
             android:layout_margin="2dp"/>
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/btn_name_art"
@@ -30,7 +30,7 @@
             android:layout_margin="2dp"/>
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/btn_name_free"
@@ -45,7 +45,7 @@
         android:layout_height="fill_parent">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/btn_name_history"
@@ -55,7 +55,7 @@
             android:layout_margin="2dp"/>
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/btn_name_houses"
@@ -65,7 +65,7 @@
             android:layout_margin="2dp"/>
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/btn_name_science"
